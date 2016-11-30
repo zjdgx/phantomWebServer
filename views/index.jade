@@ -1,0 +1,31 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title 网页裁剪服务
+    link(rel="stylesheet", href='css/index.css')      
+  body
+    .main
+      div.form
+        div.type
+          div.menu.pcOrwap
+            label PC端
+              i
+            ul.options.hide
+              li.selected PC端
+              li 移动端
+          div.menu.phone.hide
+            label iphone6
+              i
+            ul.options.hide
+              li iphone5
+              li.selected iphone6
+              li iphone6s
+        input.url(type='text', placeholder='输入url')
+        input.selector(type='text', placeholder='输入DOM选择器')
+        p.hint.hide URL不能为空
+        div.btns
+          button.sure 确定
+          button.reset 重置
+      .result
+    script(src='js/jquery-1.7.2.min.js')
+    script(src='js/main.js')

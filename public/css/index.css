@@ -1,0 +1,99 @@
+html, body, ul, li, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px/18px 'Courier New', 'Times New Roman', Microsoft Yahei,"微软雅黑",sans-serif;
+}
+.main {
+  width: 980px;
+  margin: 0 auto;
+}
+.form {
+  width: 300px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.type {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.menu {
+  width: 100px;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+.menu.pcOrwap {
+  margin-right: 10px;
+}
+.menu label {
+  cursor: pointer;
+}
+.menu i {
+  margin-top: 3px;
+  margin-left: 4px;
+  display: inline-block;
+  border: 6px solid #ccc;
+  vertical-align: middle;
+  border-color: #333 transparent transparent transparent;
+}
+.options {
+  top: 25px;
+  margin: 0;
+  left: -1px;
+  z-index: 1;
+  padding: 0;
+  width: 100px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  border: 1px solid #ccc;
+}
+.options li {
+  cursor: pointer;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+}
+.url, .selector {
+  width: 300px;
+  height: 24px;
+  outline: none;
+  display: block;
+  padding: 4px 6px;
+  line-height: 24px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+.hide {
+  display: none;
+}
+.hint {
+  color: #f00;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+button {
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 20px;
+  border-radius: 2px;
+  background-color: #000;
+}
+.sure {
+  margin-right: 30px;
+  background-color: #00e7ff;
+}
+.reset {
+  background-color: #ec4e02;
+}
