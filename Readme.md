@@ -7,4 +7,4 @@
 
 ##Run
 
-- `node app.js` Or 'pm2 start app.js'
+- `node app.js` Or `pm2 start app.js`
