@@ -1,4 +1,4 @@
-#[phantomjs](http://phantomjs.org/)网页截图
+#[phantomjs](http://phantomjs.org/) image cut for web page
 
 ##Requirements
 
@@ -8,3 +8,7 @@
 ##Run
 
 - `node app.js` Or `pm2 start app.js`
+
+##Note
+
+- Only iphone 5, iphone 6 and iphone 6s mobile browsers supported just now!
