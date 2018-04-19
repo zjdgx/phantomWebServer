@@ -48,15 +48,19 @@ app.post('/img', function (req, res) {
     return ph.createPage();
   }).then(function (page) {
     _page = page;
-    console.time('page open');
 
-    if (iPhone.length) {
+    if (iPhone && iPhone.length) {
       page.property('customHeaders',{
         'User-Agent': userAgent[iPhone]['ua']
       });
       page.property('viewportSize', {
         width: userAgent[iPhone]['size']['width'],
         height: userAgent[iPhone]['size']['height']
+      })
+    } else {
+      page.property('viewportSize', {
+        width: 1440,
+        height: 900
       })
     }
     return _page.open(address);
@@ -67,6 +71,7 @@ app.post('/img', function (req, res) {
     _page.evaluate(function (s) {
       return document.querySelector(s).getBoundingClientRect();
     }, selector).then(function (c) {
+      console.log('size:' + JSON.stringify(c));
       console.timeEnd('evaluate');
       c && _page.property('clipRect', {
         top:    c.top,
@@ -95,4 +100,6 @@ app.post('/img', function (req, res) {
   });
 });
 
-app.listen(8000);
+app.listen(8010, function() {
+  console.log('server is running at 8010...');
+});
